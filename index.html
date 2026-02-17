@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Play Chess</h1>
+      <section class="game-wrap">
+        <div id="board" class="board" aria-label="Chessboard"></div>
+        <aside class="panel">
+          <p><strong>Turn:</strong> <span id="turn">White</span></p>
+          <p id="status" class="status">Select a piece to move.</p>
+          <div class="actions">
+            <button id="newGame">New Game</button>
+            <button id="flipBoard">Flip Board</button>
+            <button id="vsComputer">Vs Computer: On</button>
+          </div>
+          <div class="engine-controls">
+            <label for="computerRating">Stockfish Rating: <span id="ratingValue">2800</span></label>
+            <input id="computerRating" type="range" min="1200" max="2800" step="50" value="2800" />
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
